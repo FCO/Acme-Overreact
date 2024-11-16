@@ -1,0 +1,24 @@
+use Test;
+use Acme::Overreact;
+
+my $ast1 = 'say 42'.AST;
+my $ast2 = 'say("that works")'.AST;
+my $ast3 = 'say 42; say("that works")'.AST;
+
+my $ast4 = "print 42".AST;
+my $ast5 = 'print("that works")'.AST;
+my $ast6 = 'print 42; print("that works")'.AST;
+
+for $ast1, $ast2, $ast3, $ast4, $ast5, $ast6 {
+	.&overreact
+}
+
+is $ast1.DEPARSE.subst(/\n/, " ", :g).trim, 'say 42, "!!!"';
+is $ast2.DEPARSE.subst(/\n/, " ", :g).trim, 'say("that works", "!!!")';
+is $ast3.DEPARSE.subst(/\n/, " ", :g).trim, 'say 42, "!!!"; say("that works", "!!!")';
+
+is $ast4.DEPARSE.subst(/\n/, " ", :g).trim, 'print 42';
+is $ast5.DEPARSE.subst(/\n/, " ", :g).trim, 'print("that works")';
+is $ast6.DEPARSE.subst(/\n/, " ", :g).trim, 'print 42; print("that works")';
+
+done-testing;
