@@ -16,7 +16,7 @@ sub EXPORT(--> Map()) {
 
 =head1 NAME
 
-Acme::Overreact - blah blah blah
+Acme::Overreact - Make your code overreact
 
 =head1 SYNOPSIS
 
@@ -24,11 +24,15 @@ Acme::Overreact - blah blah blah
 
 use Acme::Overreact;
 
+CHECK overreact;
+
+say 42; # prints '42!!!'
+
 =end code
 
 =head1 DESCRIPTION
 
-Acme::Overreact is ...
+Acme::Overreact is just a joke, please do not use that in production code
 
 =head1 AUTHOR
 

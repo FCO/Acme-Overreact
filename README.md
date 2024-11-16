@@ -1,19 +1,25 @@
+[![Actions Status](https://github.com/FCO/Acme-Overreact/actions/workflows/test.yml/badge.svg)](https://github.com/FCO/Acme-Overreact/actions)
+
 NAME
 ====
 
-Acme::Overreact - blah blah blah
+Acme::Overreact - Make your code overreact
 
 SYNOPSIS
 ========
 
 ```raku
 use Acme::Overreact;
+
+CHECK overreact;
+
+say 42; # prints '42!!!'
 ```
 
 DESCRIPTION
 ===========
 
-Acme::Overreact is ...
+Acme::Overreact is just a joke, please do not use that in production code
 
 AUTHOR
 ======

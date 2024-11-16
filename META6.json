@@ -8,7 +8,7 @@
   "depends": [
     "ASTQuery"
   ],
-  "description": "blah blah blah",
+  "description": "Make your code overreact",
   "license": "Artistic-2.0",
   "name": "Acme::Overreact",
   "perl": "6.d",
@@ -17,7 +17,7 @@
   },
   "resources": [
   ],
-  "source-url": "",
+  "source-url": "https://github.com/FCO/Acme-Overreact.git",
   "tags": [
   ],
   "test-depends": [
