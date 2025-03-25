@@ -24,7 +24,7 @@ Acme::Overreact is just a joke, please do not use that in production code
 AUTHOR
 ======
 
-Fernando Corrêa de Oliveira <fernando.correa@humanstate.com>
+Fernando Corrêa de Oliveira <fco@cpan.org>
 
 COPYRIGHT AND LICENSE
 =====================
